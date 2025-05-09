@@ -1,0 +1,13 @@
+[workspace]
+members = [ "plugin_impl","plugin_lib", "plugin_use"]
+
+[workspace.package]
+name = "testinv"
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+inventory = "0.3"
+plugin_lib = { version = "0.1.0", path = "./plugin_lib" }
+plugin_use = { version = "0.1.0", path = "./plugin_use" }
+plugin_impl = { version = "0.1.0", path = "./plugin_impl" }
